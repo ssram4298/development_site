@@ -1,0 +1,67 @@
+.Fade-in {
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+@keyframes fade-in {
+  from {opacity: 0.5}
+  to {opacity: 1}
+}
+.slides{
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+  width: 100%;
+  margin: 0;
+  border: 5px solid #111;
+  transition: opacity 1.5s ease;
+}
+.boxes{
+	position: absolute;
+	z-index: 1;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+.right{
+	margin-left: 50%;
+	background-color: #111;
+	opacity: 0;
+	transition: opacity 1.5s ease;
+}
+.left{
+	margin-right: 50%;
+	background-color: #111;
+	opacity: 0;
+	transition: opacity 1.5s ease;
+}
+.text{
+	padding: 45% 20%;
+	transition: opacity 1.5s ease;
+	color: #fff;
+}
+.right:hover{
+	opacity: 0.7;
+}
+.left:hover{
+	opacity: 0.7;
+}
+.image{
+	z-index: 2;
+	position: absolute;
+	transition: all 1s;
+}
+.image1{
+	margin:10% 47.5%;
+}
+.image2{
+	margin:40% 47.5%;
+}
+.right:hover ~ .image{
+	margin-left: 72.5%;
+	/*margin-top: 15%*/
+}
+.left:hover ~ .image{
+	margin-left: 23.5%;
+	/*margin-top: 15%*/
+}

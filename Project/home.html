@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Page</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <!-- navbar in top -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+  <!-- HEADER IN THE NAVBAR I.E.,IMAGES -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <!-- these spans are for the icon in the collapsed navbar -->
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- the company logo  -->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo1.jpg" alt="">
+      </a>
+      <a href="#" class="navbar-brand">
+        <img src="images/logo2.jpg" alt="">
+      </a>
+    </div>
+    <!-- LINKS IN THE NAVBAR -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- container for the first part of the webpage -->
+<div class="container-fluid"><!--responsive container-->
+  <div class="pimg1"><!--container for parallax effect-->
+    <div class="Hover1">.</div>
+    <div class="Hover2">.</div>
+        <div class="slides"><!--Container for slideshow-->
+          <div class="mySlides Fade-in">
+            <img src="images/4.jpg" style="width:100%;">
+          </div>
+          <div class="mySlides Fade-in">
+            <img src="images/2.jpg" style="width:100%">
+          </div>
+          <div class="mySlides Fade-in">
+            <img src="images/5.jpg" style="width:100%">
+          </div>
+          <div class="mySlides Fade-in">
+            <img src="images/9.jpg" style="width:100%">
+          </div>
+          <!-- <span class="prev" onclick="plusSlides(-1)">&#10094;</span> -->
+          <!-- <span class="next" onclick="plusSlides(1)">&#10095;</span> -->
+        </div>
+  </div>
+
+  <section class="sec">
+    <div class="jumbotron">
+      <h1>We Are?</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates !
+      </p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    </div>
+  </section>
+
+  <div class="pimg2">
+  <!-- the hoverable divs to show bg image -->
+    <div class="Hover3">.</div>
+    <div class="Hover4">.</div>
+    <div class="img-name-container"><!--image container-->
+      <!-- FIRST ROW OF IMAGES -->
+      <div class="img-name1 row"><!--container of first row-->
+        <div class="col-xs-6 image-name"><!--bootstrap grid for seperation-->
+          <img src="images/page1.jpg" class="img2">
+          <div class="img-txt">Image 1</div><!--THE TEXT TO BE DISPLAYED ON THE IMAGE ON MOUSE OVER-->
+        </div>
+        <div class="col-xs-6 image-name">
+          <img src="images/page2.jpg" class="img2">
+          <div class="img-txt">Image 2</div>
+        </div>
+      </div>
+      <!-- SECOND ROW OF IMAGES -->
+      <div class="img-name1 row">
+        <div class="col-xs-6 image-name">
+          <img src="images/page3.jpg" class="img2">
+          <div class="img-txt">Image 3</div>
+        </div>
+        <div class="col-xs-6 image-name">
+          <img src="images/page4.jpg" class="img2">
+          <div class="img-txt">Image 4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- second section -->
+  <section class="sec">
+    <h2>Section Two</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+    </p>
+  </section>
+</div>
+
+  <div class="container-fluid">
+      <div class="pimg3 row">
+        <div class="col-md-6 pform">
+            <form>
+              <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control transparent-input" placeholder="Matthew" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control transparent-input" placeholder="Murdock" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" class="form-control transparent-input" placeholder="mattmurdock@hotmail.com" required>
+                  <p class="help-block">Enter a Working Email Address to Hear about Our News</p>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox"> I Wish To Receive Promotion mails
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-info">Submit</button>
+
+            </form>
+            <!-- <button class="btn btn-default Bttn">hello</button> -->
+        </div>
+          <div class="col-md-6 pform2">
+          <div class="congrats">
+            <img src="images/smiley.jpg" class="smileys">
+           </div> 
+        </div>
+      </div>
+    </div>
+  <section class="sec">
+    <h2>Section Three</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+    </p>
+  </section>
+<!--<div class="container-fluid">
+  <div class="pimg4">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/fb.jpg" class="com1">
+      </div>
+      <div class="col-md-6">
+        <img src="images/whp.jpg" class="com1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="images/insta.jpg" class="com1">
+      </div>
+      <div class="col-md-6">
+        <img src="images/twt.jpg" class="com1">
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<script src="js/home.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".Bttn").click(function () {
+			$(".smileys").css("opacity","1");
+		});
+	});
+</script>  
+<script src="js/bootstrap.min.js" > </script>
+</body>
+</html>
+
+

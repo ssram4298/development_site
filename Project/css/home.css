@@ -1,0 +1,187 @@
+* {
+  box-sizing:border-box
+}
+/*navbar styles*/
+.navbar{
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar-brand{
+  margin-top:-10px;
+}
+/*all parallax common*/
+.pimg1,.pimg2,.pimg3{
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*parallax 1*/
+.pimg1{
+  background-image: url("../images/6.jpg");
+  min-height: 100%;
+}
+/*styling parallax and slides*/
+.Hover1{
+  position: absolute;
+  left: 0;
+  min-height: 100%;
+  width: 10%;
+}
+.Hover2{
+  position: absolute;
+  right: 0;
+  min-height: 100%;
+  width: 10%;
+}
+.Hover1:hover ~ .mySlides{
+  opacity: 0;
+}
+.Hover2:hover ~ .mySlides{
+  opacity: 0;
+}
+/* slideshow*/
+.slides{
+  position: relative;
+  margin: auto;
+}
+.mySlides{
+  width: 80%;
+  margin: 3.9% 10% 0 10%;
+  border: 5px solid #111;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-left: 10%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: background-color 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  margin-right: 10%;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover , .next:hover{
+  background-color: #111;
+}
+/* Fading animation */
+.Fade-in {
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+}
+@keyframes fade-in {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+/*section 1*/
+.sec{
+  position: relative;
+}
+.jumbotron{
+  margin-bottom: 0;
+}
+/*parallax 2 */
+.pimg2{
+  background-image: url("../images/8.jpg");
+  min-height: 500px;
+}
+.img-name{
+  height: 25%;
+}
+.img2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Hover3{
+  position: absolute;
+  min-height: 500px;
+  left: 0;
+  width: 10%;
+}
+.Hover4{
+  position: absolute;
+  min-height: 500px;
+  width: 10%;
+  right: 0;
+}
+.col-xs-6{
+  padding:0.6%;
+}
+.Hover3:hover ~ div.img-name-container{
+  opacity: 0;
+}
+.Hover4:hover ~ div.img-name-container{
+  opacity: 0;
+}
+.img-name-container{
+  width: 80%;
+  margin: 0 10%;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+.img-name-container:hover{
+  opacity: 1;
+}
+.img-txt{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: #ECE645;
+  font-size: 2em;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  border-radius: 3px;
+}
+.img2:hover + .img-txt{
+  opacity: 1;
+}
+.img2:hover {
+  opacity: 0.7;
+}
+/*third parallax*/
+.pimg3{
+  background-image: url("../images/15.jpg");
+  min-height: 500px;
+}
+.pform{
+  width: 50%;
+  padding: 5%;
+  font-size: 1.5em;
+  color: #353535;
+  line-height: 1.5em;
+}
+input.transparent-input{
+  background-color:transparent !important;
+}
+input.transparent-input:focus{
+  background-color: #fff !important;
+}
+.btn-info{
+  background-color: #353535 !important;
+  border: none;
+}
+.pform2{
+  width: 50%;
+  color: #353535;
+}
+
+.pimg4{
+  background-image: url("../images/6.jpg");
+  min-height: 500px;
+}
+.smileys{
+  opacity: 0;
+  width: 450px;
+  height: 450px;
+}

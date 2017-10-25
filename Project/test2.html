@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello</title>
+	<style type="text/css">
+		.img{
+			opacity: 0;
+			transition:opacity 0.9s ease;
+		}
+	</style>
+</head>
+<body>
+<button class="btn">button</button>
+<img src="images/smiley.jpg" class="img">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".btn").click(function () {
+			$(".img").css("opacity","1");
+		});
+	});
+</script>
+</body>
+</html>
